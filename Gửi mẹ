@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư gửi mẹ 20/10 💗</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #ffd6e7, #fff0f5, #ffc2d8);
+    }
+
+    .letter {
+      width: 100%;
+      max-width: 600px;
+      padding: 30px;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 10px 35px #d86a9060;
+      text-align: center;
+      animation: appear 1.2s ease;
+    }
+
+    h1 {
+      color: #e75480;
+      font-size: 30px;
+    }
+
+    .heart {
+      font-size: 55px;
+      animation: heartbeat 1s infinite;
+    }
+
+    .message {
+      color: #654052;
+      font-size: 18px;
+      line-height: 1.9;
+      text-align: left;
+    }
+
+    .signature {
+      color: #e75480;
+      font-size: 21px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #e75480;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #c93665;
+      transform: scale(1.05);
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 20px;
+      color: #e75480;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      .letter { padding: 22px; }
+      h1 { font-size: 25px; }
+      .message { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="letter">
+    <div class="heart">💗</div>
+
+    <h1>Chúc Mừng Ngày 20/10</h1>
+    <h2 style="color:#d94f7b">Gửi người mẹ yêu dấu của con 🌷</h2>
+
+    <div class="message">
+      Mẹ yêu của con! ❤️<br><br>
+
+      Nhân ngày Phụ nữ Việt Nam 20/10, con chúc mẹ
+      luôn mạnh khỏe, vui vẻ, xinh đẹp và hạnh phúc
+      mỗi ngày.<br><br>
+
+      Con cảm ơn mẹ vì đã luôn yêu thương, chăm sóc
+      và hy sinh cho con. Con biết đôi khi con còn
+      nghịch ngợm, chưa ngoan và làm mẹ buồn,
+      nhưng con luôn yêu mẹ rất nhiều.<br><br>
+
+      Con mong mẹ sẽ luôn ở bên con thật lâu,
+      luôn nở nụ cười và không phải lo lắng quá nhiều.
+      Con sẽ cố gắng học tập thật tốt để mẹ vui lòng.<br><br>
+
+      <b>Con yêu mẹ nhiều lắm! Chúc mẹ có một ngày
+      20/10 thật ngọt ngào và tràn ngập yêu thương! 💐</b>
+    </div>
+
+    <p class="signature">
+      Con yêu của mẹ 💕
+    </p>
+
+    <button onclick="showLove()">
+      💌 Mẹ ơi, bấm vào đây nhé!
+    </button>
+
+    <div id="surprise">
+      🌹 MẸ LÀ ĐIỀU TUYỆT VỜI NHẤT! 🌹<br>
+      Con yêu mẹ hơn tất cả những lời con có thể nói.<br>
+      💖 Chúc mẹ mãi mãi bình an và hạnh phúc! 💖
+    </div>
+  </div>
+
+  <script>
+    function showLove() {
+      const surprise = document.getElementById("surprise");
+
+      surprise.style.display = "block";
+      surprise.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+      });
+    }
+  </script>
+</body>
+</html>
